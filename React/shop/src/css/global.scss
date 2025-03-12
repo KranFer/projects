@@ -1,0 +1,41 @@
+@import './base.scss';
+@import './fonts.scss';
+
+@import './navbar.scss';
+
+@import './header.scss';
+@import './header-main.scss';
+@import './header-viewer.scss';
+@import './header-cart.scss';
+
+@import './footer.scss';
+
+@import './newyear-sale.scss';
+@import './tradings.scss';
+@import './tradings-ligth.scss';
+@import './register.scss'; 
+@import './searchprod.scss';
+
+
+html {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  overflow: hidden; 
+}
+
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  color: $wt; 
+  border-radius: 6px;
+  width: 125px;
+  height: 38px;
+  background: $second-2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1400px;
+  justify-self: center;
+}

@@ -1,0 +1,53 @@
+.searchprod {
+
+  .search_field {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .search_imput {
+      border-radius: 8px;
+      background: $first-1;
+      width: 230px;
+      height: 40px;
+      font-size: 13px;
+
+      .prodname::placeholder {
+        font-weight: 400;
+        color: $fourth-2;
+      }
+
+      .priceprod::placeholder {
+        font-weight: 400;
+        color: $fourth-2;
+        float: right;
+
+        .value {
+          float: left;
+          font-weight: 600;
+          color: $third-1;
+        }
+      }
+    }
+  }
+
+  .dots-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    background: $first-1;
+    font-weight: 600;
+    font-size: 15px;
+    color: $fourth-1;
+    justify-self: center;
+    margin-top: 8px;
+
+    .active {
+      background: $second-2;
+      color: $third-1;
+    }
+  }
+}

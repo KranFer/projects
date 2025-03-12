@@ -1,0 +1,88 @@
+.content {
+  padding: 24px;
+
+  .image-box {
+    display: grid;
+    grid: repeat(5, auto) / repeat(5, auto);
+    gap: 4px 19px;
+
+    .chosen-image {
+      grid-column: 1/5;
+      grid-row: 1/5;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: $third-1;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: $third-1;
+    }
+
+    .param {
+      font-weight: 500;
+      font-size: 14px;
+      color: $fourth-1;
+      margin-bottom: 16px;
+
+      .value {
+        color: $third-1;
+      }
+    }
+
+    .desc {
+      font-weight: 400;
+      font-size: 12px;
+      color: $third-2;
+      margin-bottom: 20px;
+    }
+
+    .buttonbox {
+      border-radius: 6px;
+      height: 38px;
+      font-weight: 600;
+      font-size: 16px;
+
+      .tocart {
+        background: #6c3eb8;
+        color: #fff;
+        width: 133px;
+      }
+
+      .tofav {
+        color: #b8b8b8;
+        width: 171px;
+        background: #576067;
+      }
+    }
+
+    .otherbox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 10px;
+
+      .purch {
+        color: $fourth-1;
+      }
+
+      .find {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $fourth-1;
+      }
+    }
+  }
+}

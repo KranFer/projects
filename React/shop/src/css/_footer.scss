@@ -1,0 +1,36 @@
+.footer {
+
+
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-btnbox {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      .footer-btnbox-item {
+        transition: all 0.3s;
+
+        :hover path {
+          fill: $second-2;
+        }
+      }
+    }
+
+    .footer_textbox {
+      font-weight: 500;
+      font-size: 12px;
+
+      .footer_textbox-main {
+        color: $fourth-1;
+      }
+
+      .footer_textbox-sec {
+        color: $second-2;
+      }
+    }
+  }
+}

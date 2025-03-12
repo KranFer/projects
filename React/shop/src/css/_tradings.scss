@@ -1,0 +1,78 @@
+.tredings {
+  background-color: $first-2;
+
+  .tredings-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: $wt;
+  }
+
+  .prodbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .prodbox_item {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 0 0 8px 8px;
+
+      .prodbox_item-image {
+        width: 230px;
+        height: 110px;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .prodbox_item-content {
+        padding: 12px 12px 8px 12px;
+
+        .title {
+          font-weight: 600;
+          font-size: 15px;
+          color: $wt;
+          margin-bottom: 8px;
+        }
+
+        .subtitle {
+          font-weight: 500;
+          font-size: 12px;
+          color: $third-2;
+          margin-bottom: 28px;
+        }
+
+        .prodinfo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .price-main {
+              font-weight: 700;
+              font-size: 20px;
+              color: $second-2;
+            }
+
+            .price-main {
+              font-weight: 500;
+              font-size: 13px;
+              text-decoration: line-through;
+              color: $fourth-1;
+            }
+          }
+
+          .purch {
+            font-weight: 500;
+            font-size: 10px;
+            color: $fourth-1;
+          }
+        }
+      }
+    }
+  }
+}

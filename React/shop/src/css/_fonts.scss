@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-style: normal;
+    src:
+        local(NanitoSans),
+        url("../fonts/Montserrat-Light.woff2") format("woff2"),
+        url("../fonts/Montserrat-Light.woff") format("woff"),
+        url("../fonts/Montserrat-Light.ttf") format("ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local(NanitoSans),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular.ttf") format("ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src:
+        local(NanitoSans),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("../fonts/Montserrat-Medium.woff") format("woff"),
+        url("../fonts/Montserrat-Medium.ttf") format("ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src:
+        local(NanitoSans),
+        url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff"),
+        url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    src:
+        local(NanitoSans),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff"),
+        url("../fonts/Montserrat-Bold.ttf") format("ttf");
+    font-display: swap;
+}
+@font-face { 
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-style: normal;
+    src:
+        local(NanitoSans),
+        url("../fonts/Montserrat-Black.woff2") format("woff2"),
+        url("../fonts/Montserrat-Black.woff") format("woff"),
+        url("../fonts/Montserrat-Black.ttf") format("ttf");
+    font-display: swap;
+}

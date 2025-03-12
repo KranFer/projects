@@ -1,0 +1,47 @@
+.register {
+  width: 320px;
+  height: 100vh;
+  position: static;
+  padding: 24px;
+
+  .close{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+
+  .register__title {
+    font-weight: 400;
+    font-size: 15px;
+    color: $third-1;
+    margin-bottom: 24px;
+  }
+
+  .register__input-item {
+    border-radius: 8px;
+    width: 272px;
+    height: 40px;
+    padding: 12px 24px;
+    margin-bottom: 16px;
+    background: $first-1;
+
+    .password-input {
+      border: 1px solid $second-2;
+    }
+
+    ::placeholder {
+      font-weight: 400;
+      font-size: 13px;
+      color: $third-1;
+    }
+  }
+
+  .register-button {
+    margin-top: 8px;
+    width: 272px;
+    height: 38px;
+    border-radius: 6px;
+    background: $second-2;
+    color: $wt;
+  }
+}

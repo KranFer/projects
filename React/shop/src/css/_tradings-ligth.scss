@@ -1,0 +1,36 @@
+.product-light {
+  padding: 24px;
+
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: $wt; 
+    margin-bottom: 24px;
+  }
+
+  .product_box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .product_box-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .product__item-image {
+        width: 230px;
+        height: 230px;
+      }
+
+      .title {
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 20px;
+        color: $wt;
+      }
+    }
+  }
+
+}

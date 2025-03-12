@@ -1,0 +1,41 @@
+.navbar {
+  padding: 20px 0;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+
+  .searchbar {
+    height: 27px;
+    width: 300px;
+    background-color: $first-2;
+    border-radius: 6px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+
+    .searchbar-icon {
+      margin-right: 16px;
+    }
+
+    .searchbar-placeholder {
+      font-weight: 400;
+      font-size: 9px;
+      color: $third-2;
+    }
+  }
+
+  .btn_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    .btn_box-item {
+      transition: all 0.3s;
+
+      :hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

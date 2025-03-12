@@ -1,0 +1,43 @@
+.sale-bunner {
+  display: flex;
+  align-items: center;
+  background-color: $first-2;
+
+  .content {
+    padding: 74px 110px;
+
+    .subtitle {
+      font-weight: 300;
+      font-size: 70px;
+      text-align: center;
+      color: $second-2;
+    }
+
+    .title {
+      font-weight: 300;
+      font-size: 150px;
+      text-align: center;
+      color: $second-2;
+      margin-bottom: 25px;
+    }
+  }
+
+  .imagebox {
+    border-radius: 0 6px 6px 0;
+    width: 637px;
+    height: 570px;
+
+    .desc {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: $first-1;
+
+      .accent {
+        font-weight: 700;
+        color: $second-2;
+      }
+    }
+  }
+
+}
