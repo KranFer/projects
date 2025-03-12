@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__nav-menu">
+          <div class="header__logo">
+            <img src="./image/logo.png" alt="">
+          </div>
+          <div class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">Главная</li>
+              <li class="header__menu-item">Про гида</li>
+              <li class="header__menu-item">Программа тура</li>
+              <li class="header__menu-item">Стоимость</li>
+              <li class="header__menu-item">Блог</li>
+              <li class="header__menu-item">Контакты</li>
+            </ul>
+          </div>
+          <div class="header__button-box">
+            <button class="header__button-item button">Консультация</button>
+          </div>
+        </div>
+        <div class="header__search">
+          <div class="header__search-title">Насладись прогулкой в горах
+            с командой единомышленников</div>
+          <div class="header__search-menu">
+            <ul class="search__menu-list">
+              <li class="search__menu-location">
+                <select name="location" id="" class="menu__location-input search__menu-input">
+                  <option value="location-0" disabled selected hidden>Локации для тура</option>
+                  <option value="location-1">Москва</option>
+                  <option value="location-2">Санкт-Петербург</option>
+                  <option value="location-3">Нижний Новгород</option>
+                  <option value="location-4">Краснодар</option>
+                </select>
+                <div class="search__menu-desc">выберите из списка</div>
+              </li>
+              <li class="search__menu-date">
+                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Дата похода"
+                  class="menu__date-input search__menu-input">
+                <div class="search__menu-desc">укажите диапазон</div>
+              </li>
+              <li class="search__menu-party">
+                <select name="party" id="" class="menu__party-input search__menu-input">
+                  <option value="party-0" disabled selected hidden>Участники</option>
+                  <option value="party-1">Добавить участника +</option>
+                </select>
+                <div class="search__menu-desc">минимум 4 человека</div>
+              </li>
+              <div class="search__menu-link">
+                <button class="search__menu-button button-ng">Найти программу</button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="program">
+      <div class="container">
+        <div class="program__inner">
+          <div class="program__image-box">
+            <img src="./image/pictures/Pohod-1.png" alt="">
+            <img src="./image/pictures/Pohod-2.png" alt="">
+          </div>
+          <div class="program__text-box">
+            <div class="program__subtitle subtitle-text">о нашем походе</div>
+            <div class="program__title title-text">Исследуйте все горные массивы мира вместе с нами</div>
+            <div class="program__desc desc-text-1">Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+              есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат
+              Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в
+              классической латинской литературе. </div>
+            <div class="program-link">
+              <button class="program-button button">Программа тура</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <div class="offer__inner">
+          <div class="offer__text-box">
+            <div class="offer__subtitle subtitle-text">наше предложение</div>
+            <div class="offer__title title-text">Лучшие программы для тебя</div>
+            <div class="offer__desc desc-text-1">Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+              есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</div>
+            <ul class="offer__units-list">
+              <li class="offer__units-item">
+                <div class="units__item-icon">
+                  <img src="./image/Icon/offer-1.png" alt="">
+                </div>
+                <div class="units__item-content">
+                  <div class="units__item-title">Опытный гид</div>
+                  <div class="units__item-desc">Для современного мира базовый вектор развития предполагает независимые
+                    способы реализации соответствующих условий активизации.</div>
+                </div>
+              </li>
+              <li class="offer__units-item">
+                <div class="units__item-icon">
+                  <img src="./image/Icon/offer-2.png" alt="">
+                </div>
+                <div class="units__item-content">
+                  <div class="units__item-title">Безопасный поход</div>
+                  <div class="units__item-desc">Для современного мира базовый вектор развития предполагает независимые
+                    способы реализации соответствующих условий активизации.</div>
+                </div>
+              </li>
+              <li class="offer__units-item">
+                <div class="units__item-icon">
+                  <img src="./image/Icon/offer-3.png" alt="">
+                </div>
+                <div class="units__item-content">
+                  <div class="units__item-title">Лояльные цены</div>
+                  <div class="units__item-desc">Для современного мира базовый вектор развития предполагает независимые
+                    способы реализации соответствующих условий активизации.</div>
+                </div>
+              </li>
+            </ul>
+            <div class="offer-link">
+              <button class="offer-button button">Стоимость программ</button>
+            </div>
+          </div>
+          <div class="offer__image-box">
+            <ul class="offer__image-list">
+              <li class="offer__image-item">
+                <img src="./image/pictures/offers-1.png" alt="">
+              </li>
+              <li class="offer__image-item">
+                <img src="./image/pictures/offers-2.png" alt="">
+              </li>
+              <li class="offer__image-item">
+                <img src="./image/pictures/offers-3.png" alt="">
+              </li>
+              <li class="offer__image-item">
+                <img src="./image/pictures/offers-4.png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="directions">
+      <div class="container">
+        <div class="directions__inner">
+          <div class="directions__subtitle subtitle-text">по версии отдыхающих</div>
+          <div class="directions__title title-text">Популярные направления</div>
+          <div class="directions__units-box">
+            <ul class="directions__units-list">
+              <li class="directions__units-item">
+                <div class="directions__item-image">
+                  <img src="./image/pictures/directions-1.png" alt="">
+                </div>
+                <div class="directions__item-content">
+                  <div class="directions__item-name">
+                    <div class="directions__item-title">Озеро возле гор</div>
+                    <div class="directions__item-subtitle">романтическое приключение</div>
+                  </div>
+                  <div class="directions__item-cost">
+                    <div class="directions__item-price">480 $</div>
+                  </div>
+                </div>
+                <div class="directions__item-stars">
+                  <img src="./image/Icon/star.svg" alt="">
+                  <div class="directions__item-rating">4.9</div>
+                </div>
+              </li>
+              <li class="directions__units-item">
+                <div class="directions__item-image">
+                  <img src="./image/pictures/directions-2.png" alt="">
+                </div>
+                <div class="directions__item-content">
+                  <div class="directions__item-name">
+                    <div class="directions__item-title">Ночь в горах</div>
+                    <div class="directions__item-subtitle">в компании друзей</div>
+                  </div>
+                  <div class="directions__item-cost">
+                    <div class="directions__item-price">500 $</div>
+                  </div>
+                </div>
+                <div class="directions__item-stars">
+                  <img src="./image/Icon/star.svg" alt="">
+                  <div class="directions__item-rating">4.5</div>
+                </div>
+              </li>
+              <li class="directions__units-item">
+                <div class="directions__item-image">
+                  <img src="./image/pictures/directions-3.png" alt="">
+                </div>
+                <div class="directions__item-content">
+                  <div class="directions__item-name">
+                    <div class="directions__item-title">Йога в горах</div>
+                    <div class="directions__item-subtitle">для тех, кто забоится о себе</div>
+                  </div>
+                  <div class="directions__item-cost">
+                    <div class="directions__item-price">230 $</div>
+                  </div>
+                </div>
+                <div class="directions__item-stars">
+                  <img src="./image/Icon/star.svg" alt="">
+                  <div class="directions__item-rating">5.0</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="directions-link">
+            <button class="directions-button button">Рейтинг направлений</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__inner">
+          <div class="blog__subtitle subtitle-text">делимся впечатлениями</div>
+          <div class="blog__title title-text">Блог о путешествиях</div>
+          <div class="blog__units-box">
+            <ul class="blog__units-list">
+              <li class="blog__units-item">
+                <div class="blog__item-image">
+                  <img src="./image/pictures/blog-1.png" alt="">
+                </div>
+                <div class="blog__item-content">
+                  <div class="blog__item-title">Красивая Италя, какая она в реальности?</div>
+                  <div class="blog__item-desc">Для современного мира базовый вектор развития предполагает независимые
+                    способы реализации соответствующих условий активизации.</div>
+                  <div class="blog__item-box">
+                    <div class="blog__item-data">01/04/2023</div>
+                    <a href="#" class="blog__item-link">читать статью</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__units-item">
+                <div class="blog__item-image">
+                  <img src="./image/pictures/blog-2.png" alt="">
+                </div>
+                <div class="blog__item-content">
+                  <div class="blog__item-title">Долой сомнения! Весь мир открыт для вас!</div>
+                  <div class="blog__item-desc">Для современного мира базовый вектор развития предполагает независимые
+                    способы реализации соответствующих условий активизации ... независимые способы реализации
+                    соответствующих условий активизации ...Для современного мира базовый вектор развития предполагает
+                    независимые способы реализации соответствующих условий активизации ... независимые способы
+                    реализации
+                    соответствующих условий активизации ...</div>
+                  <div class="blog__item-box">
+                    <div class="blog__item-data">01/04/2023</div>
+                    <a href="#" class="blog__item-link">читать статью</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__units-item">
+                <div class="blog__item-image">
+                  <img src="./image/pictures/blog-3.png" alt="">
+                </div>
+                <div class="blog__item-content">
+                  <div class="blog__item-title">Как подготовиться к путешествию в одиночку?</div>
+                  <div class="blog__item-desc">Для современного мира базовый вектор развития предполагает.</div>
+                  <div class="blog__item-box">
+                    <div class="blog__item-data">01/04/2023</div>
+                    <a href="#" class="blog__item-link">читать статью</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__units-item">
+                <div class="blog__item-image">
+                  <img src="./image/pictures/blog-4.png" alt="">
+                </div>
+                <div class="blog__item-content">
+                  <div class="blog__item-title">Индия ... летим?</div>
+                  <div class="blog__item-desc">Для современного мира базовый</div>
+                  <div class="blog__item-box">
+                    <div class="blog__item-data">01/04/2023</div>
+                    <a href="#" class="blog__item-link">читать статью</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="impress">
+      <div class="container">
+        <div class="impress__inner">
+          <div class="impress__subtitle subtitle-text">фото-отчет</div>
+          <div class="impress__title title-text">Делимся впечатлениями</div>
+          <div class="impress__units-box">
+            <ul class="impress__units-list">
+              <li class="impress__units-item double-one">
+                <img src="./image/pictures/impress-1.png" alt="">
+              </li>
+              <li class="impress__units-item">
+                <img src="./image/pictures/impress-2.png" alt="">
+              </li>
+              <li class="impress__units-item">
+                <img src="./image/pictures/impress-3.png" alt="">
+              </li>
+              <li class="impress__units-item fog-image">
+                <img src="./image/pictures/impress-4.png" alt="">
+              </li>
+              <li class="impress__units-item double-two">
+                <img src="./image/pictures/impress-5.png" alt="">
+              </li>
+              <li class="impress__units-item">
+                <img src="./image/pictures/impress-6.png" alt="">
+              </li>
+            </ul>
+          </div>
+          <div class="impress-link">
+            <button class="impress-button button">Наш pinterest</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__inner">
+          <div class="feedback-desc">
+            <div class="feedback-subtitle">актуально</div>
+            <div class="feedback-title">Получайте полезные рассылки о путешествиях</div>
+          </div>
+          <div class="feedback__field">
+            <div class="feedback__field-name">Введите e-mail адрес</div>
+            <form class="feedback__field-form" action="">
+              <input class="feedback__field-input" type="email" name="submit" id="" placeholder="name@domain.com"
+                required>
+              <button class="feedback__field-button button" type="submit">Подписаться на новости</button>
+            </form>
+            <div class="feedback__field-desc">подписываясь на новости, вы автоматически соглашаетесь с условиями
+              обработки персональных данных и правилами рекламных рассылок</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__menu-box">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item footer__copmany">
+              <div class="footer__copmany-title footer-title">Компания «РумТибет»</div>
+              <div class="footer__copmany-desc">Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+                есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</div>
+              <ul class="footer__copmany-links">
+                <li class="footer__links-item">
+                  <a href="mailto:info@domain.com">info@domain.com</a>
+                </li>
+                <li class="footer__links-item">
+                  <a href="tel:info@domain.com">+7 (123) 456-78-90</a>
+                </li>
+              </ul>
+              <ul class="footer__copmany-messengers">
+                <li class="footer__messengers-item footer-tg">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 2.6665C8.63996 2.6665 2.66663 8.63984 2.66663 15.9998C2.66663 23.3598 8.63996 29.3332 16 29.3332C23.36 29.3332 29.3333 23.3598 29.3333 15.9998C29.3333 8.63984 23.36 2.6665 16 2.6665ZM22.1866 11.7332C21.9866 13.8398 21.12 18.9598 20.68 21.3198C20.4933 22.3198 20.12 22.6532 19.7733 22.6932C19 22.7598 18.4133 22.1865 17.6666 21.6932C16.4933 20.9198 15.8266 20.4398 14.6933 19.6932C13.3733 18.8265 14.2266 18.3465 14.9866 17.5732C15.1866 17.3732 18.6 14.2665 18.6666 13.9865C18.6759 13.9441 18.6747 13.9001 18.663 13.8582C18.6514 13.8164 18.6298 13.7781 18.6 13.7465C18.52 13.6798 18.4133 13.7065 18.32 13.7198C18.2 13.7465 16.3333 14.9865 12.6933 17.4398C12.16 17.7998 11.68 17.9865 11.2533 17.9732C10.7733 17.9598 9.86663 17.7065 9.18663 17.4798C8.34663 17.2132 7.69329 17.0665 7.74663 16.5998C7.77329 16.3598 8.10663 16.1198 8.73329 15.8665C12.6266 14.1732 15.2133 13.0532 16.5066 12.5198C20.2133 10.9732 20.9733 10.7065 21.48 10.7065C21.5866 10.7065 21.84 10.7332 22 10.8665C22.1333 10.9732 22.1733 11.1198 22.1866 11.2265C22.1733 11.3065 22.2 11.5465 22.1866 11.7332Z"
+                      fill="white" />
+                  </svg>
+                </li>
+                <li class="footer__messengers-item footer-vk">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.36 3C8.98138 3 3 8.98138 3 16.36C3 23.7386 8.98138 29.72 16.36 29.72C23.7386 29.72 29.72 23.7386 29.72 16.36C29.72 8.98138 23.7386 3 16.36 3ZM21.498 18.0731C21.498 18.0731 22.6796 19.2394 22.9704 19.7807C22.9788 19.7918 22.9829 19.803 22.9857 19.8085C23.104 20.0076 23.1318 20.162 23.0734 20.2775C22.976 20.4696 22.642 20.5642 22.5279 20.5726H20.4404C20.2956 20.5726 19.9922 20.535 19.6248 20.2817C19.3423 20.0841 19.064 19.7598 18.7926 19.4439C18.3877 18.9735 18.037 18.5672 17.6835 18.5672C17.6386 18.5671 17.594 18.5742 17.5513 18.5881C17.2841 18.6743 16.9417 19.0557 16.9417 20.0716C16.9417 20.3889 16.6912 20.5712 16.5145 20.5712H15.5584C15.2327 20.5712 13.5363 20.4571 12.0333 18.872C10.1935 16.9306 8.53744 13.0367 8.52352 13.0005C8.41915 12.7486 8.63486 12.6136 8.87005 12.6136H10.9784C11.2595 12.6136 11.3514 12.7848 11.4154 12.9365C11.4906 13.1132 11.7661 13.816 12.2184 14.6065C12.9518 15.8952 13.4013 16.4184 13.7618 16.4184C13.8293 16.4177 13.8957 16.4005 13.9552 16.3683C14.4256 16.1067 14.3379 14.4298 14.317 14.0818C14.317 14.0164 14.3156 13.3317 14.0749 13.0033C13.9023 12.7653 13.6087 12.6749 13.4305 12.6415C13.5026 12.542 13.5976 12.4613 13.7075 12.4063C14.0303 12.2448 14.6121 12.2212 15.1896 12.2212H15.5111C16.1373 12.2295 16.2988 12.2699 16.5256 12.3269C16.9849 12.4369 16.9946 12.7333 16.9542 13.7478C16.9417 14.0359 16.9292 14.3616 16.9292 14.7457C16.9292 14.8292 16.925 14.9182 16.925 15.0129C16.9111 15.5292 16.8944 16.1151 17.259 16.3558C17.3066 16.3856 17.3615 16.4016 17.4177 16.4017C17.5443 16.4017 17.9256 16.4017 18.9582 14.6302C19.2767 14.0599 19.5534 13.4674 19.7863 12.8572C19.8072 12.821 19.8684 12.7097 19.9408 12.6665C19.9942 12.6393 20.0534 12.6254 20.1133 12.6262H22.5919C22.8619 12.6262 23.047 12.6665 23.0817 12.7709C23.143 12.9365 23.0706 13.4417 21.9392 14.9739L21.434 15.6405C20.4084 16.9849 20.4084 17.053 21.498 18.0731Z"
+                      fill="white" />
+                  </svg>
+                </li>
+                <li class="footer__messengers-item footer-pin">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.0534 28.7198C13.3334 29.1065 14.6268 29.3332 16.0001 29.3332C19.5363 29.3332 22.9277 27.9284 25.4282 25.4279C27.9287 22.9274 29.3334 19.5361 29.3334 15.9998C29.3334 14.2489 28.9885 12.5151 28.3185 10.8974C27.6484 9.27972 26.6663 7.80986 25.4282 6.57175C24.1901 5.33363 22.7202 4.35151 21.1025 3.68144C19.4849 3.01138 17.751 2.6665 16.0001 2.6665C14.2491 2.6665 12.5153 3.01138 10.8976 3.68144C9.27996 4.35151 7.81011 5.33363 6.57199 6.57175C4.07151 9.07223 2.66675 12.4636 2.66675 15.9998C2.66675 21.6665 6.22675 26.5332 11.2534 28.4532C11.1334 27.4132 11.0134 25.6932 11.2534 24.5065L12.7868 17.9198C12.7868 17.9198 12.4001 17.1465 12.4001 15.9198C12.4001 14.0798 13.5468 12.7065 14.8534 12.7065C16.0001 12.7065 16.5334 13.5465 16.5334 14.6265C16.5334 15.7732 15.7734 17.4132 15.3868 18.9865C15.1601 20.2932 16.0801 21.4398 17.4134 21.4398C19.7868 21.4398 21.6268 18.9065 21.6268 15.3332C21.6268 12.1332 19.3334 9.94651 16.0401 9.94651C12.2801 9.94651 10.0668 12.7465 10.0668 15.6932C10.0668 16.8398 10.4401 17.9998 11.0534 18.7598C11.1734 18.8398 11.1734 18.9465 11.1334 19.1465L10.7467 20.5998C10.7467 20.8265 10.6001 20.9065 10.3734 20.7465C8.66675 19.9998 7.68008 17.5732 7.68008 15.6132C7.68008 11.3998 10.6667 7.57317 16.4268 7.57317C21.0134 7.57317 24.5868 10.8665 24.5868 15.2398C24.5868 19.8265 21.7468 23.5065 17.6801 23.5065C16.3868 23.5065 15.1201 22.8132 14.6668 21.9998L13.7734 25.1598C13.4668 26.3065 12.6267 27.8398 12.0534 28.7598V28.7198Z"
+                      fill="white" />
+                  </svg>
+                </li>
+                <li class="footer__messengers-item footer-skype">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24 8C26.76 10.72 27.8 14.52 27.1467 18.0667C27.6933 19.0267 28 20.1467 28 21.3333C28 23.1014 27.2976 24.7971 26.0474 26.0474C24.7971 27.2976 23.1014 28 21.3333 28C20.1467 28 19.0267 27.6933 18.0667 27.1467C14.52 27.8 10.72 26.76 8 24C5.24 21.28 4.2 17.48 4.85333 13.9333C4.30667 12.9733 4 11.8533 4 10.6667C4 8.89856 4.70238 7.20286 5.95262 5.95262C7.20286 4.70238 8.89856 4 10.6667 4C11.8533 4 12.9733 4.30667 13.9333 4.85333C17.48 4.2 21.28 5.24 24 8ZM16.0533 22.88C19.88 22.88 21.7867 21.04 21.7867 18.56C21.7867 16.9733 21.04 15.28 18.1467 14.6267L15.4933 14.04C14.48 13.8133 13.3333 13.5067 13.3333 12.56C13.3333 11.6 14.1333 10.9333 15.6 10.9333C18.5733 10.9333 18.2933 12.9733 19.7733 12.9733C20.5467 12.9733 21.2133 12.52 21.2133 11.7333C21.2133 9.90667 18.2933 8.53333 15.8133 8.53333C13.1333 8.53333 10.2667 9.68 10.2667 12.72C10.2667 14.1867 10.7867 15.7467 13.6667 16.4667L17.2533 17.3733C18.3333 17.64 18.6 18.24 18.6 18.8C18.6 19.7067 17.6933 20.6 16.0533 20.6C12.84 20.6 13.28 18.1333 11.56 18.1333C10.7867 18.1333 10.2267 18.6667 10.2267 19.4267C10.2267 20.9067 12 22.88 16.0533 22.88Z"
+                      fill="white" />
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item footer__service">
+              <div class="footer__service-title footer-title">Наши услуги</div>
+              <ul class="footer__service-list footer__box-list">
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Прогулки в горы летом
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Зимние походы в горы
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Посещение храмов в горах
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Экстремальные виды туризма
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Походы в джунглях Амазонии
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Поездка в Африку
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item footer__service">
+              <div class="footer__service-title footer-title">Важно для путешествий</div>
+              <ul class="footer__service-list footer__box-list">
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Как собрать в долгий поход?
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Жизненно важные предметы для похода
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Медицинская страховка, гарантии безопасности
+                </li>
+                <li class="footer__service-item footer__box-item">
+                  <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2_49)">
+                      <path
+                        d="M7.7154 8.6098L3.26527 4.15975C3.16235 4.05675 3.02495 4 2.87845 4C2.73195 4 2.59455 4.05675 2.49162 4.15975L2.1639 4.48739C1.95065 4.70089 1.95065 5.04788 2.1639 5.26105L5.90078 8.99793L2.15975 12.739C2.05683 12.842 2 12.9793 2 13.1257C2 13.2723 2.05683 13.4096 2.15975 13.5127L2.48748 13.8402C2.59048 13.9433 2.7278 14 2.8743 14C3.0208 14 3.1582 13.9433 3.26113 13.8402L7.7154 9.38613C7.81857 9.2828 7.87524 9.14484 7.87491 8.99817C7.87524 8.85094 7.81857 8.71305 7.7154 8.6098Z"
+                        fill="#FDFDFD" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2_49">
+                        <rect width="9.87491" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Если вы врач - загляните сюда
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__other">
+      <div class="container">
+        <div class="footer__other-inner">
+          <div class="footer__other-author">ИП Константинопольский К.К., 2023</div>
+          <div class="footer__other-author-maket">ссылка на автора макета: https://avanesov.pro/portfolio/rumtibet/</div>
+          <div class="footer__other-persdata">Политика обработки персональных данных</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,53 @@
+$first: #2C2C54;
+$second: #686DE0;
+$wh: #ffffff;
+
+.container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+body {
+  overflow-x: hidden;
+  color: $wh;
+  background-color: $first;
+  font-family: Gilroy;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+}
+
+.h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.btn {
+  background-color: $second;
+  color: $first;
+  font-weight: 700;
+  font-size:22px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+  color: #fff;
+}

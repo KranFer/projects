@@ -1,0 +1,144 @@
+@media (min-width: 1440px) {
+  .container {
+    width: 1300px;
+  }
+
+}
+
+@media((max-width: 1440px) and (min-width: 1150px)) {
+  .container {
+    width: 1100px;
+  }
+  .copyrigth{
+    left: 40%;
+  }
+
+  .title-main{
+    margin-top: 60px;
+  }
+
+  .login {
+    margin-top: 40px;
+  }
+
+  .login__enter {
+    margin-right: 120px;
+    width: 510px;
+    height: 587px;
+  }
+
+  .image-box>img {
+    height: 100%;
+    width: 85%;
+    display: unset;
+  }
+  .copyrigth{
+    left: 60%;
+  }
+}
+
+@media ((max-width: 1150px) and (min-width: 950px)) {
+  .container {
+    width: 900px;
+  }
+  .title-main{
+    margin-top: 80px;
+  }
+
+  .login {
+    margin-top: 60px;
+  }
+
+  .login__enter {
+    margin-right: 60px;
+  }
+
+  .input__field {
+    height: 45px;
+    width: 100%;
+  }
+
+  .hide-svg {
+    top: -36px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .enter__title {
+    margin-bottom: 30px;
+  }
+
+  .login__profile {
+    margin-bottom: 18px;
+  }
+
+  .login__password {
+    margin-bottom: 0;
+  }
+
+  .login__button {
+    height: 40px;
+  }
+  .copyrigth{
+    left: 56%;
+  }
+  .profile__input + label{
+    top: -46px;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 750px;
+  }
+
+  .autorization-page {
+    margin-top: 80px;
+  }
+
+  .box-enter {
+    margin-right: 0px;
+  }
+
+  .box-inner{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .input__field {
+    height: 43px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .hide-svg {
+    top: -32px;
+  }
+
+  .button{
+    height: 50px;
+  }
+
+  .image-box>img {
+    display: none;
+  }
+
+  .copyrigth {
+    display: flex;
+    justify-content: center;
+    padding: 5px auto;
+    /* margin: 0 auto; */
+  }
+
+  .enter__forget{
+    margin-bottom: 30px;
+  }
+
+  .copyrigth{
+    margin-top: 10px;
+    position: static;
+  }
+
+  .profile__input + label{
+    top: -40px;
+  }
+}

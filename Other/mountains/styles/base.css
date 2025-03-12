@@ -1,0 +1,63 @@
+body {
+  font-family: NinitoSans;
+  color: #18121E;
+}
+
+.container {
+  width: 1100px;
+  justify-self: center;
+}
+
+.button {
+  background-color: #1A3E3E;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  width: 244px;
+  height: 52px;
+  border-radius: 4px;
+  letter-spacing: 0.01em;
+}
+
+.button-ng {
+  background-color: #FDFDFD;
+  color: #1A3E3E;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 244px;
+  height: 52px;
+  border-radius: 4px;
+}
+
+.title-text {
+  color: #18121E;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+
+.subtitle-text {
+  color: #F2BE22;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.desc-text-1 {
+  color: #18121E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
+
+.desc-text-2 {
+  color: #18121E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}/*# sourceMappingURL=base.css.map */

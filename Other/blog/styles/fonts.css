@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Futura";
+  font-weight: 400;
+  font-style: normal;
+  src: local(Futura), url("../fonts/FuturaCyrillicBook.woff2") format("woff2"), url("../fonts/FuturaCyrillicBook.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura";
+  font-weight: 450;
+  font-style: normal;
+  src: local(Futura), url("../fonts/FuturaCyrillicDemi.woff") format("woff2"), url("../fonts/FuturaCyrillicDemi.woff") format("woff");
+  font-display: swap;
+}/*# sourceMappingURL=fonts.css.map */
