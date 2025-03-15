@@ -1,0 +1,105 @@
+@import './base.scss';
+
+.tredings {
+  background-color: $first-2;
+  padding: 25px 22px;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .tredings-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: $wt;
+    margin-bottom: 24px;
+  }
+
+  .prodbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .prodbox_item {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: $first-1;
+      border-radius: 0 0 8px 8px;
+      cursor: pointer;
+
+      &:hover img {
+        scale: 1.03;
+      }
+
+      .prodbox_item-image {
+        width: 269px;
+        height: 125px;
+        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          transition: all .5s;
+        }
+      }
+
+      .prodbox_item-content {
+        padding: 12px 12px 8px 12px;
+
+        .title {
+          font-weight: 600;
+          font-size: 15px;
+          color: $wt;
+          margin-bottom: 8px;
+        }
+
+        .subtitle {
+          font-weight: 500;
+          font-size: 12px;
+          color: $third-2;
+          margin-bottom: 28px;
+        }
+
+        .prodinfo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .price-main {
+              font-weight: 700;
+              font-size: 20px;
+              color: $second-2;
+            }
+
+            .price-sec {
+              font-weight: 500;
+              font-size: 13px;
+              text-decoration: line-through;
+              color: $fourth-1;
+            }
+          }
+
+          .purch {
+            font-weight: 500;
+            font-size: 10px;
+            color: $fourth-1;
+          }
+        }
+      }
+    }
+  }
+
+  .tradings_btn {
+    margin-top: 24px;
+  }
+}

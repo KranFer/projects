@@ -1,26 +1,13 @@
+@import './reset.css';
 @import './base.scss';
 @import './fonts.scss';
-
-@import './navbar.scss';
-
-@import './header.scss';
-@import './header-main.scss';
-@import './header-viewer.scss';
-@import './header-cart.scss';
-
-@import './footer.scss';
-
-@import './newyear-sale.scss';
-@import './tradings.scss';
-@import './tradings-ligth.scss';
-@import './register.scss'; 
-@import './searchprod.scss';
-
 
 html {
   font-family: 'Montserrat';
   font-weight: 500;
-  overflow: hidden; 
+  overflow-x: hidden;
+  background: $first-1;
+  color: $wt;
 }
 
 .button {
@@ -31,11 +18,16 @@ html {
   width: 125px;
   height: 38px;
   background: $second-2;
+  transition: all 0.3s;
+
+  &:hover{
+    opacity: 0.8;
+  }
 }
 
 .container {
   display: flex;
   justify-content: center;
-  width: 1400px;
+  width: 1200px;
   justify-self: center;
 }

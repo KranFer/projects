@@ -1,0 +1,32 @@
+.content {
+  padding: 10px 31px;
+  text-transform: uppercase;
+  background: #191919;
+  border-radius: 6px;
+  position: relative;
+}
+.content .content-img {
+  width: 462px;
+  height: 359px;
+  position: absolute;
+  bottom: -19px;
+  right: 41px;
+}
+.content .backtitle {
+  font-weight: 900;
+  font-size: 109px;
+  color: #212123;
+  margin-bottom: 45px;
+}
+.content .subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #616E74;
+}
+.content .title {
+  margin: 8px 0 24px 0;
+  width: 480px;
+  font-weight: 700;
+  font-size: 42px;
+  color: #F6F6F7;
+}/*# sourceMappingURL=Header-main.module.css.map */

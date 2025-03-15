@@ -1,0 +1,57 @@
+.sale-banner {
+  margin: 20px 0 20px;
+  height: 570px;
+  display: flex;
+  background-color: #191919;
+  border-radius: 6px;
+}
+.sale-banner .content {
+  padding: 100px 87px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sale-banner .content .subtitle {
+  font-weight: 300;
+  font-size: 70px;
+  text-align: center;
+  color: #6C3EB8;
+}
+.sale-banner .content .title {
+  font-weight: 300;
+  font-size: 150px;
+  text-align: center;
+  color: #6C3EB8;
+  margin-bottom: 25px;
+}
+.sale-banner .content .sale-icon1 {
+  position: absolute;
+  bottom: 74px;
+  left: -25px;
+}
+.sale-banner .content .sale-icon2 {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+}
+.sale-banner .imagebox {
+  border-radius: 0 6px 6px 0;
+  width: 637px;
+  height: 570px;
+  position: relative;
+}
+.sale-banner .imagebox .desc {
+  position: absolute;
+  bottom: 24px;
+  transform: translateX(-50%);
+  left: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #212123;
+}
+.sale-banner .imagebox .desc .accent {
+  font-weight: 700;
+  color: #6C3EB8;
+}/*# sourceMappingURL=Newyear-sale.module.css.map */

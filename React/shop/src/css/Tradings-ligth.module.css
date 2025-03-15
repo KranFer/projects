@@ -1,0 +1,47 @@
+.tredings-light {
+  padding: 24px;
+  background: #191919;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.tredings-light .tredings-title {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.tredings-light .tredings_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tredings-light .tredings_box .tredings_box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.tredings-light .tredings_box .tredings_box-item:hover img {
+  scale: 1.03;
+}
+.tredings-light .tredings_box .tredings_box-item .tredings__item-image {
+  width: 212px;
+  height: 212px;
+  overflow: hidden;
+}
+.tredings-light .tredings_box .tredings_box-item .tredings__item-image img {
+  transition: all 0.5s;
+}
+.tredings-light .tredings_box .tredings_box-item .title {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.tredings-light .tradings_btn {
+  margin-top: 24px;
+}/*# sourceMappingURL=Tradings-ligth.module.css.map */

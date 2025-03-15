@@ -1,0 +1,59 @@
+@import './base.scss';
+
+.tredings-light {
+  padding: 24px;
+  background: $first-2;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .tredings-title {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: $wt;
+    margin-bottom: 24px;
+  }
+
+  .tredings_box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .tredings_box-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover img {
+        scale: 1.03;
+      }
+
+      .tredings__item-image {
+        width: 212px;
+        height: 212px;
+        overflow: hidden;
+
+        img {
+          transition: all .5s;
+        }
+
+      }
+
+      .title {
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 20px;
+        color: $wt;
+      }
+    }
+  }
+
+  .tradings_btn {
+    margin-top: 24px;
+  }
+
+}

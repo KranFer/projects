@@ -1,0 +1,88 @@
+.tredings {
+  background-color: #191919;
+  padding: 25px 22px;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.tredings .tredings-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.tredings .prodbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.tredings .prodbox .prodbox_item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #212123;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+}
+.tredings .prodbox .prodbox_item:hover img {
+  scale: 1.03;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-image {
+  width: 269px;
+  height: 125px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-image img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content {
+  padding: 12px 12px 8px 12px;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .subtitle {
+  font-weight: 500;
+  font-size: 12px;
+  color: #B8B8B8;
+  margin-bottom: 28px;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .prodinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .prodinfo .price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .prodinfo .price .price-main {
+  font-weight: 700;
+  font-size: 20px;
+  color: #6C3EB8;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .prodinfo .price .price-sec {
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: line-through;
+  color: #576067;
+}
+.tredings .prodbox .prodbox_item .prodbox_item-content .prodinfo .purch {
+  font-weight: 500;
+  font-size: 10px;
+  color: #576067;
+}
+.tredings .tradings_btn {
+  margin-top: 24px;
+}/*# sourceMappingURL=Tradings.module.css.map */

@@ -1,0 +1,65 @@
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar label.searchplace {
+  position: relative;
+}
+.navbar label.searchplace img.searchbar-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 17px;
+  margin-right: 16px;
+}
+.navbar label.searchplace input.searchbar {
+  height: 32px;
+  width: 300px;
+  background-color: #191919;
+  border-radius: 6px;
+  padding: 7px 10px 7px 35px;
+  display: flex;
+  align-items: center;
+  color: #F6F6F7;
+}
+.navbar label.searchplace input.searchbar .searchbar-placeholder {
+  font-weight: 400;
+  font-size: 9px;
+  color: #B8B8B8;
+}
+.navbar .btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.navbar .btn_box .btn_box-item {
+  transition: all 0.3s;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navbar .btn_box .btn_box-item:hover {
+  opacity: 0.7;
+}
+.navbar .btn_box .btn_box-item .newInCart, .navbar .btn_box .btn_box-item .newInLiked {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  bottom: -2px;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  right: 0;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #8B57C6;
+  border-radius: 50%;
+  font-size: 7px;
+  font-weight: 700;
+}/*# sourceMappingURL=Navbar.module.css.map */

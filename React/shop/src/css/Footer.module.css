@@ -1,0 +1,30 @@
+.footer .footer__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #191919;
+  padding: 15px 24px;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.footer .footer__inner .footer_textbox {
+  font-weight: 500;
+  font-size: 12px;
+}
+.footer .footer__inner .footer_textbox .footer_textbox-main {
+  color: #576067;
+}
+.footer .footer__inner .footer_textbox .footer_textbox-sec {
+  color: #6C3EB8;
+}
+.footer .footer__inner .footer-btnbox {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.footer .footer__inner .footer-btnbox .footer-btnbox-item {
+  transition: all 0.3s;
+}
+.footer .footer__inner .footer-btnbox .footer-btnbox-item :hover path {
+  fill: #6C3EB8;
+}/*# sourceMappingURL=Footer.module.css.map */
