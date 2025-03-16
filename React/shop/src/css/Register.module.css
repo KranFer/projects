@@ -1,40 +1,49 @@
+.hidden {
+  display: none;
+}
+
 .register {
   width: 320px;
   height: 100vh;
-  position: static;
+  right: 0;
+  position: absolute;
   padding: 24px;
+  background: #191919;
 }
 .register .close {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 9px;
+  right: 9px;
+  cursor: pointer;
 }
 .register .register__title {
   font-weight: 400;
   font-size: 15px;
   color: #F6F6F7;
   margin-bottom: 24px;
+  text-align: center;
 }
-.register .register__input-item {
+.register .register__input-item input {
   border-radius: 8px;
   width: 272px;
   height: 40px;
   padding: 12px 24px;
   margin-bottom: 16px;
   background: #212123;
+  color: #F6F6F7;
 }
-.register .register__input-item .password-input {
+.register .register__input-item input ::-moz-placeholder {
+  font-weight: 400;
+  font-size: 13px;
+  color: #F6F6F7;
+}
+.register .register__input-item input ::placeholder {
+  font-weight: 400;
+  font-size: 13px;
+  color: #F6F6F7;
+}
+.register .password-input {
   border: 1px solid #6C3EB8;
-}
-.register .register__input-item ::-moz-placeholder {
-  font-weight: 400;
-  font-size: 13px;
-  color: #F6F6F7;
-}
-.register .register__input-item ::placeholder {
-  font-weight: 400;
-  font-size: 13px;
-  color: #F6F6F7;
 }
 .register .register-button {
   margin-top: 8px;

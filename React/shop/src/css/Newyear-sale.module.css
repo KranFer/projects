@@ -29,11 +29,13 @@
   position: absolute;
   bottom: 74px;
   left: -25px;
+  z-index: 10;
 }
 .sale-banner .content .sale-icon2 {
   position: absolute;
   bottom: -24px;
   right: -24px;
+  z-index: 10;
 }
 .sale-banner .imagebox {
   border-radius: 0 6px 6px 0;

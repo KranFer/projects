@@ -2,11 +2,21 @@
 
 .content {
   padding: 24px;
+  display: flex;
+  gap: 31px;
+  background-color: $first-2;
 
   .image-box {
     display: grid;
     grid: repeat(5, auto) / repeat(5, auto);
     gap: 4px 19px;
+    width: 485px;
+    overflow: hidden;
+
+    >img {
+      border-radius: 8px;
+      cursor: pointer;
+    }
 
     .chosen-image {
       grid-column: 1/5;
@@ -14,7 +24,7 @@
     }
   }
 
-  .content {
+  .text-box {
     display: flex;
     flex-direction: column;
 
@@ -32,14 +42,44 @@
       color: $third-1;
     }
 
-    .param {
+    .price-param {
       font-weight: 500;
       font-size: 14px;
       color: $fourth-1;
       margin-bottom: 16px;
 
-      .value {
+      .price-value {
         color: $third-1;
+        margin-left: 16px;
+      }
+    }
+
+    .size-param {
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      color: $fourth-1;
+
+      .size-value {
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+
+        .size-value-item {
+          color: $third-1;
+          padding: 6px 8px;
+          border-radius: 8px;
+          background: $first-1;
+          cursor: pointer;
+
+          &.size-value-item--active {
+            background: $second-2;
+          }
+        }
       }
     }
 
@@ -48,6 +88,7 @@
       font-size: 12px;
       color: $third-2;
       margin-bottom: 20px;
+      max-width: 300px;
     }
 
     .buttonbox {
@@ -59,12 +100,13 @@
       .tocart {
         background: #6c3eb8;
         color: #fff;
-        width: 133px;
+        width: 120px;
+        margin-right: 10px;
       }
 
       .tofav {
         color: #b8b8b8;
-        width: 171px;
+        width: 160px;
         background: #576067;
       }
     }
@@ -75,15 +117,28 @@
       justify-content: space-between;
       font-weight: 500;
       font-size: 10px;
+      margin-top: auto;
 
       .purch {
+        cursor: pointer;
         color: $fourth-1;
+        transition: all .3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
 
       .find {
+        cursor: pointer;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: $fourth-1;
+        transition: all .3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }

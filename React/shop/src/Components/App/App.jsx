@@ -1,25 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppRoutes from '../Routes/Routes';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import Sidebar from '../Sidebar/Sidebar';
 
-
-import Tradings from '../Tradings/Tradings';
-import TradingsLigth from '../Tradings/TradingsLigth';
-import Banner from '../Banner/Banner';
+import Register from '../Modal/Register';
 
 import '../../css/global.css'
 
 const App = () => {
+  const [blackout, setblackout] = useState(false)
+
+  const useBlackuot = () => {
+    setblackout(!blackout)
+  }
+
   return (
     <div className='app'>
-      <Header />
+      <Register isBlakout={blackout} setBlack={useBlackuot}/>
+      <Header func={useBlackuot}/>
 
-      <Tradings />
-      <TradingsLigth />
-      <Banner />
-      <Tradings />
+      <AppRoutes />
 
       <Footer />
     </div>

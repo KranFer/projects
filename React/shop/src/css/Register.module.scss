@@ -1,15 +1,22 @@
 @import './base.scss';
 
+.hidden {
+  display: none;
+}
+
 .register {
   width: 320px;
   height: 100vh;
-  position: static;
+  right: 0;
+  position: absolute;
   padding: 24px;
+  background: $first-2;
 
-  .close{
+  .close {
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 9px;
+    right: 9px;
+    cursor: pointer;
   }
 
   .register__title {
@@ -17,25 +24,28 @@
     font-size: 15px;
     color: $third-1;
     margin-bottom: 24px;
+    text-align: center;
   }
 
-  .register__input-item {
+  .register__input-item input {
     border-radius: 8px;
     width: 272px;
     height: 40px;
     padding: 12px 24px;
     margin-bottom: 16px;
     background: $first-1;
+    color: $third-1;
 
-    .password-input {
-      border: 1px solid $second-2;
-    }
 
     ::placeholder {
       font-weight: 400;
       font-size: 13px;
       color: $third-1;
     }
+  }
+
+  .password-input {
+    border: 1px solid $second-2;
   }
 
   .register-button {
