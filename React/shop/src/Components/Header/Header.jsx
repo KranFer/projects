@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Navbar from '../Navbar/Navbar'
-import HeaderMain from '../Header/HeaderMain'
 
 import HeaderST from '../../css/Header.module.css'
 import AsideNav from './AsideNav';
