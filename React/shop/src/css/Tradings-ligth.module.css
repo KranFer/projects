@@ -29,11 +29,13 @@
   scale: 1.03;
 }
 .tredings-light .tredings_box .tredings_box-item .tredings__item-image {
-  width: 212px;
-  height: 212px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .tredings-light .tredings_box .tredings_box-item .tredings__item-image img {
+  width: 100%;
+  height: 100%;
   transition: all 0.5s;
 }
 .tredings-light .tredings_box .tredings_box-item .title {

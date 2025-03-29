@@ -4,6 +4,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navbar .header__profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.navbar .header__profile:hover .profile-name {
+  opacity: 0.8;
+}
+.navbar .header__profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.navbar .header__profile .profile-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #576067;
+  transition: all 0.3s;
 }
 .navbar label.searchplace {
   position: relative;

@@ -16,9 +16,8 @@
   margin-bottom: 24px;
 }
 .tredings .prodbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid: repeat(1, auto)/repeat(4, auto);
   gap: 20px;
 }
 .tredings .prodbox .prodbox_item {
@@ -33,8 +32,9 @@
   scale: 1.03;
 }
 .tredings .prodbox .prodbox_item .prodbox_item-image {
-  width: 269px;
-  height: 125px;
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
   border-radius: 8px 8px 0 0;
   overflow: hidden;
 }
@@ -44,6 +44,10 @@
 }
 .tredings .prodbox .prodbox_item .prodbox_item-content {
   padding: 12px 12px 8px 12px;
+  display: flex;
+  height: 115px;
+  flex-direction: column;
+  margin-top: auto;
 }
 .tredings .prodbox .prodbox_item .prodbox_item-content .title {
   font-weight: 600;
@@ -55,7 +59,7 @@
   font-weight: 500;
   font-size: 12px;
   color: #B8B8B8;
-  margin-bottom: 28px;
+  margin-bottom: auto;
 }
 .tredings .prodbox .prodbox_item .prodbox_item-content .prodinfo {
   display: flex;

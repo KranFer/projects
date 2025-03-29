@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AppRoutes from '../Routes/Routes';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
-import Register from '../Modal/Register';
+import UserForm from '../Modal/UserForm';
 
 import '../../css/global.css'
+import { useDispatch } from 'react-redux';
+import { getCategories } from '../../features/categories/categoriesSlice';
+import { getProducts } from '../../features/products/productsSlice';
 
 const App = () => {
-  const [blackout, setblackout] = useState(false)
+  const dispatch = useDispatch();
 
-  const useBlackuot = () => {
-    setblackout(!blackout)
-  }
+  useEffect(() => {
+    dispatch(getCategories())
+    dispatch(getProducts())
+  }, [dispatch])
+
+
 
   return (
     <div className='app'>
-      <Register isBlakout={blackout} setBlack={useBlackuot}/>
-      <Header func={useBlackuot}/>
+      <UserForm />
+      <Header />
 
       <AppRoutes />
 

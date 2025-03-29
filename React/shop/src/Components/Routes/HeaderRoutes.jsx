@@ -5,13 +5,15 @@ import { Route, Routes } from 'react-router-dom'
 import HeaderMain from '../Header/HeaderMain';
 import HeaderCart from '../Header/HeaderCart';
 import HeaderViewer from '../Header/HeaderViewer';
+import { ROUTES } from '../../utils/routes';
 
-const HeaderRoutes = ({func}) => {
+const HeaderRoutes = ({ func }) => {
   return (
     <Routes>
       <Route index element={<HeaderMain />} />
-      <Route path="/cart" element={<HeaderCart />} />
-      <Route path="/:prod_id" element={<HeaderViewer func={func}/>} />
+      <Route path={ROUTES.Cart} element={<HeaderCart />} />
+      <Route path={ROUTES.PRODUCTS} element={<HeaderViewer func={func} />} />
+      <Route path={ROUTES.CATEGORY} element={<></>} />
     </Routes>
   );
 }

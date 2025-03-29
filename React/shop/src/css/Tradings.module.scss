@@ -19,9 +19,8 @@
   }
 
   .prodbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid: repeat(1, auto) / repeat(4, auto); 
     gap: 20px;
 
     .prodbox_item {
@@ -35,10 +34,10 @@
       &:hover img {
         scale: 1.03;
       }
-
+      
       .prodbox_item-image {
-        width: 269px;
-        height: 125px;
+        width: 100%;
+        height: min-content;
         border-radius: 8px 8px 0 0;
         overflow: hidden;
 
@@ -50,6 +49,10 @@
 
       .prodbox_item-content {
         padding: 12px 12px 8px 12px;
+        display: flex;
+        height: 115px;
+        flex-direction: column;
+        margin-top: auto;
 
         .title {
           font-weight: 600;
@@ -62,7 +65,7 @@
           font-weight: 500;
           font-size: 12px;
           color: $third-2;
-          margin-bottom: 28px;
+          margin-bottom: auto;
         }
 
         .prodinfo {
