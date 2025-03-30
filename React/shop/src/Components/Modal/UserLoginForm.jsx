@@ -4,10 +4,10 @@ import styles from '../../css/Register.module.css'
 
 import closIcon from '../../images/icon/cross-icon.png'
 import { useDispatch, useSelector } from 'react-redux';
-import { loginUser } from '../../features/user/userSlice';
+import { loginUser, refreshUser } from '../../features/user/userSlice';
 import useToggleForm from '../../utils/Hooks/UseToggleForm';
 
-const UserLoginForm = ({toggleCurrentFormType}) => {
+const UserLoginForm = ({ toggleCurrentFormType }) => {
   const { user: { currentUser } } = useSelector((user) => user)
   const dispatch = useDispatch();
 
@@ -40,9 +40,13 @@ const UserLoginForm = ({toggleCurrentFormType}) => {
 
     const isEmpty = Object.values(values).some(val => !val)
 
-    if (isEmpty) return;
+    const Token = localStorage.getItem('refresh_token');
 
-    dispatch(loginUser(values));
+    if (isEmpty) {
+      if (Token) dispatch(refreshUser({ refreshToken: Token }))
+    }
+
+    dispatch(loginUser(values))
 
     handleClick();
   }
@@ -80,8 +84,8 @@ const UserLoginForm = ({toggleCurrentFormType}) => {
                 required
               />
             </div>
-            <button onClick={() =>  toggleCurrentFormType('signup')} className={styles['Have-button']}>Create an account</button>
-            <button type='submit' onClick={handleSubmit} className={styles['register-button']}>Login</button>
+            <button onClick={() => toggleCurrentFormType('signup')} className={styles['Have-button']}>Create an account</button>
+            <button onClick={handleSubmit} className={styles['register-button']}>Login</button>
           </form>
         </div>
       </div>
@@ -89,4 +93,4 @@ const UserLoginForm = ({toggleCurrentFormType}) => {
   );
 }
 
-export {UserLoginForm};
+export { UserLoginForm };

@@ -6,14 +6,16 @@ import HeaderMain from '../Header/HeaderMain';
 import HeaderCart from '../Header/HeaderCart';
 import HeaderViewer from '../Header/HeaderViewer';
 import { ROUTES } from '../../utils/routes';
+import Profile from '../Profile/Profile';
 
-const HeaderRoutes = ({ func }) => {
+const HeaderRoutes = () => {
   return (
     <Routes>
-      <Route index element={<HeaderMain />} />
-      <Route path={ROUTES.Cart} element={<HeaderCart />} />
-      <Route path={ROUTES.PRODUCTS} element={<HeaderViewer func={func} />} />
-      <Route path={ROUTES.CATEGORY} element={<></>} />
+      <Route path={ROUTES.HOME} element={<HeaderMain />} />
+      <Route path={ROUTES.CART} element={<HeaderCart />} />
+      <Route path={ROUTES.CATEGORY} element={<HeaderMain />} />
+      <Route path={ROUTES.PRODUCTS} element={<HeaderViewer />} />
+      <Route path={ROUTES.PROFILE} element={<Profile />} />
     </Routes>
   );
 }

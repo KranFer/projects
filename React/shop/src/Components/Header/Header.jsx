@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Navbar from '../Navbar/Navbar'
-
 import HeaderST from '../../css/Header.module.css'
+
+import Navbar from '../Navbar/Navbar'
 import AsideNav from './AsideNav';
 import HeaderRoutes from '../Routes/HeaderRoutes';
 
-const Header = ({func}) => {
+const Header = () => {
   return (
     <>
       <nav className='container'>
@@ -15,7 +15,7 @@ const Header = ({func}) => {
       <div className='container'>
         <header className={HeaderST.header}>
           <AsideNav />
-          <HeaderRoutes func={func}/>
+          <HeaderRoutes />
         </header>
       </div>
     </ >

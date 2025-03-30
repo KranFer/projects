@@ -12,69 +12,75 @@
   padding: 24px;
   background: $first-2;
   user-select: none;
+}
 
-  .close {
-    position: absolute;
-    top: 9px;
-    right: 9px;
-    cursor: pointer;
-  }
+.edit__profile {
+  border-radius: 6px;
+  padding: 24px;
+  background: $first-2;
+}
 
-  .register__title {
+.close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  cursor: pointer;
+}
+
+.register__title {
+  font-weight: 400;
+  font-size: 15px;
+  color: $third-1;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.register__input-item input {
+  border-radius: 8px;
+  width: 272px;
+  height: 40px;
+  padding: 12px 24px;
+  margin-bottom: 16px;
+  background: $first-1;
+  color: $third-1;
+
+
+  ::placeholder {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     color: $third-1;
-    margin-bottom: 24px;
-    text-align: center;
   }
+}
 
-  .register__input-item input {
-    border-radius: 8px;
-    width: 272px;
-    height: 40px;
-    padding: 12px 24px;
-    margin-bottom: 16px;
-    background: $first-1;
-    color: $third-1;
+.password-input {
+  border: 1px solid $second-2;
+}
 
+.Have-button {
+  margin-top: 8px;
+  width: 272px;
+  height: 20px;
+  border-radius: 6px;
+  background: transparent;
+  color: $wt;
+  transition: all .3s;
 
-    ::placeholder {
-      font-weight: 400;
-      font-size: 13px;
-      color: $third-1;
-    }
+  &:hover {
+    opacity: 0.8;
   }
+}
 
-  .password-input {
-    border: 1px solid $second-2;
-  }
+.register-button {
+  margin-top: 8px;
+  width: 272px;
+  height: 38px;
+  border-radius: 6px;
+  background: $second-2;
+  color: $wt;
 
-  .Have-button {
-    margin-top: 8px;
-    width: 272px;
-    height: 20px;
-    border-radius: 6px;
-    background: transparent;
-    color: $wt;
-    transition: all .3s;
+  transition: all .3s;
 
-    &:hover{
-      opacity: 0.8;
-    }
-  }
-
-  .register-button {
-    margin-top: 8px;
-    width: 272px;
-    height: 38px;
-    border-radius: 6px;
-    background: $second-2;
-    color: $wt;
-
-    transition: all .3s;
-
-    &:hover{
-      opacity: 0.8;
-    }
+  &:hover {
+    opacity: 0.8;
   }
 }

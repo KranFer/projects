@@ -1,47 +1,72 @@
+.searchprod {
+  background: #191919;
+  padding: 25px 22px;
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.searchprod .searchprod-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 24px;
+}
 .searchprod .search_field {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 20px;
 }
-.searchprod .search_field .search_imput {
+.searchprod .search_field .search_input {
   border-radius: 8px;
   background: #212123;
   width: 230px;
   height: 40px;
   font-size: 13px;
+  padding: 12px 24px;
+  color: #F6F6F7;
 }
-.searchprod .search_field .search_imput .prodname::-moz-placeholder {
+.searchprod .search_field .search_input.prodname::-moz-placeholder {
   font-weight: 400;
   color: #616E74;
 }
-.searchprod .search_field .search_imput .prodname::placeholder {
+.searchprod .search_field .search_input.prodname::placeholder {
   font-weight: 400;
   color: #616E74;
 }
-.searchprod .search_field .search_imput .priceprod::-moz-placeholder {
-  font-weight: 400;
-  color: #616E74;
-  float: right;
-}
-.searchprod .search_field .search_imput .priceprod::placeholder {
+.searchprod .search_field .search_input.priceprod::-moz-placeholder {
   font-weight: 400;
   color: #616E74;
   float: right;
 }
-.searchprod .search_field .search_imput .priceprod::-moz-placeholder .value {
+.searchprod .search_field .search_input.priceprod::placeholder {
+  font-weight: 400;
+  color: #616E74;
+  float: right;
+}
+.searchprod .search_field .search_input.priceprod::-moz-placeholder .value {
   float: left;
   font-weight: 600;
   color: #F6F6F7;
 }
-.searchprod .search_field .search_imput .priceprod::placeholder .value {
+.searchprod .search_field .search_input.priceprod::placeholder .value {
   float: left;
   font-weight: 600;
   color: #F6F6F7;
 }
 .searchprod .dots-box {
+  margin-top: 15px;
+  position: absolute;
+  top: 46px;
+  right: 68px;
   display: flex;
-  align-items: center;
+  justify-self: center;
   gap: 10px;
+}
+.searchprod .dots-box .dots-item {
+  cursor: pointer;
   border-radius: 8px;
   width: 40px;
   height: 40px;
@@ -49,10 +74,9 @@
   font-weight: 600;
   font-size: 15px;
   color: #576067;
-  justify-self: center;
   margin-top: 8px;
 }
-.searchprod .dots-box .active {
+.searchprod .dots-box .dots-item.dots-item--active {
   background: #6C3EB8;
   color: #F6F6F7;
 }/*# sourceMappingURL=Searchprod.module.css.map */

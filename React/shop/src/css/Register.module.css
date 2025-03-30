@@ -13,20 +13,29 @@
      -moz-user-select: none;
           user-select: none;
 }
-.register .close {
+
+.edit__profile {
+  border-radius: 6px;
+  padding: 24px;
+  background: #191919;
+}
+
+.close {
   position: absolute;
   top: 9px;
   right: 9px;
   cursor: pointer;
 }
-.register .register__title {
+
+.register__title {
   font-weight: 400;
   font-size: 15px;
   color: #F6F6F7;
   margin-bottom: 24px;
   text-align: center;
 }
-.register .register__input-item input {
+
+.register__input-item input {
   border-radius: 8px;
   width: 272px;
   height: 40px;
@@ -35,20 +44,22 @@
   background: #212123;
   color: #F6F6F7;
 }
-.register .register__input-item input ::-moz-placeholder {
+.register__input-item input ::-moz-placeholder {
   font-weight: 400;
   font-size: 13px;
   color: #F6F6F7;
 }
-.register .register__input-item input ::placeholder {
+.register__input-item input ::placeholder {
   font-weight: 400;
   font-size: 13px;
   color: #F6F6F7;
 }
-.register .password-input {
+
+.password-input {
   border: 1px solid #6C3EB8;
 }
-.register .Have-button {
+
+.Have-button {
   margin-top: 8px;
   width: 272px;
   height: 20px;
@@ -57,10 +68,11 @@
   color: #fff;
   transition: all 0.3s;
 }
-.register .Have-button:hover {
+.Have-button:hover {
   opacity: 0.8;
 }
-.register .register-button {
+
+.register-button {
   margin-top: 8px;
   width: 272px;
   height: 38px;
@@ -69,6 +81,6 @@
   color: #fff;
   transition: all 0.3s;
 }
-.register .register-button:hover {
+.register-button:hover {
   opacity: 0.8;
 }/*# sourceMappingURL=Register.module.css.map */

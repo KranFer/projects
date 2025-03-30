@@ -6,8 +6,53 @@ export const createUser = createAsyncThunk(
   "users/createUser",
   async (payload, thunkAPI) => {
     try {
-      const res = await axios.post(`${BASE_URL}/users`, payload);
+      const res1 = await axios.post(`${BASE_URL}/users`, payload);
+
+      const res2 = await axios.post(`${BASE_URL}/auth/login`, payload);
+
+      const { access_token, refresh_token } = res2.data;
+      localStorage.setItem('access_token', access_token);
+      localStorage.setItem('refresh_token', refresh_token);
+      
+      return res1.data;
+    } catch (err) {
+      console.log(err);
+      return thunkAPI.rejectWithValue(err)
+    }
+  }
+)
+
+export const updateUser = createAsyncThunk(
+  "users/updateUser",
+  async (payload, thunkAPI) => {
+    try {
+      const res = await axios.put(`${BASE_URL}/users/${payload.id}`, payload);
       return res.data;
+    } catch (err) {
+      console.log(err);
+      return thunkAPI.rejectWithValue(err)
+    }
+  }
+)
+
+export const refreshUser = createAsyncThunk(
+  "users/refreshUser",
+  async (payload, thunkAPI) => {
+    try {
+      const res = await axios.post(`${BASE_URL}/auth/refresh-token`, payload);
+
+      const { access_token, refresh_token } = res.data;
+
+      const login = await axios(`${BASE_URL}/auth/profile`, {
+        headers: {
+          "Authorization": `Bearer ${access_token}`
+        }
+      });
+
+      localStorage.setItem('access_token', access_token);
+      localStorage.setItem('refresh_token', refresh_token);
+
+      return login.data;
     } catch (err) {
       console.log(err);
       return thunkAPI.rejectWithValue(err)
@@ -20,12 +65,20 @@ export const loginUser = createAsyncThunk(
   async (payload, thunkAPI) => {
     try {
       const res = await axios.post(`${BASE_URL}/auth/login`, payload);
+
+      const { access_token, refresh_token } = res.data;
+
       const login = await axios(`${BASE_URL}/auth/profile`, {
         headers: {
-          "Authorization": `Bearer ${res.data.access_token}`
+          "Authorization": `Bearer ${access_token}`
         }
       });
+
+      localStorage.setItem('access_token', access_token);
+      localStorage.setItem('refresh_token', refresh_token);
+
       return login.data;
+
     } catch (err) {
       console.log(err);
       return thunkAPI.rejectWithValue(err)
@@ -66,20 +119,40 @@ const userSlice = createSlice({
       }
 
       state.cart = newCart;
-    }
+    },
+    incItem: (state, { payload }) => {
+      let newCart = [...state.cart];
+
+      newCart = newCart.map((item) => {
+        return item.id === payload.id && item.quantity < 20 ? { ...item, quantity: item.quantity + 1 } : item;
+      })
+
+      state.cart = newCart;
+    },
+    decItem: (state, { payload }) => {
+      let newCart = [...state.cart];
+
+      newCart = newCart.map((item) => {
+        return item.id === payload.id && item.quantity > 0 ? { ...item, quantity: item.quantity - 1 } : item;
+      })
+
+      state.cart = newCart;
+    },
+    deleteItem: (state, { payload }) => {
+      let newCart = [...state.cart];
+      newCart = newCart.filter((item) => item.id != payload.id)
+
+      state.cart = newCart;
+    },
   },
   extraReducers: (builder) => {
-    // builder.addCase(getCategories.pending, (state) => {
-    //   state.isLoading = true;
-    // })
+    builder.addCase(updateUser.fulfilled, addCurrentUser)
     builder.addCase(createUser.fulfilled, addCurrentUser)
     builder.addCase(loginUser.fulfilled, addCurrentUser)
-    // builder.addCase(getCategories.rejected, (state) => {
-    //   state.isLoading = false;
-    // })
+    builder.addCase(refreshUser.fulfilled, addCurrentUser)
   }
 })
 
-export const { addItemToCart, toggleForm, toggleFormType } = userSlice.actions;
+export const { addItemToCart, toggleForm, toggleFormType, incItem, decItem, deleteItem } = userSlice.actions;
 
 export default userSlice.reducer;

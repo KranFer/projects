@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 import styles from '../../css/Header-viewer.module.css'
 import selectedProd from '../../images/viewer1.png'
@@ -16,7 +16,7 @@ import useToggleForm from '../../utils/Hooks/UseToggleForm'
 
 const SIZE = [4.5, 5, 5.5]
 
-const HeaderViewer = ({ func }) => {
+const HeaderViewer = () => {
   const dispatch = useDispatch();
 
   const [imgId, setImgId] = useState(0);
@@ -50,14 +50,14 @@ const [showForm, handleToggle] = useToggleForm();
 
 const handleClick = () => {
   if(!currentUser) handleToggle()
-  else console.log('-')
+  else addToCart();
 }
 
 // --------------------------------------------------------
 
   useEffect(() => {
     if (!isFetching && !isLoading && !isSuccess) {
-      navigate(ROUTES.Home)
+      navigate(ROUTES.HOME)
     }
   }, [isLoading, isFetching, isSuccess])
 

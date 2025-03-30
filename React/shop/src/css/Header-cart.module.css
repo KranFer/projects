@@ -11,8 +11,16 @@
   margin-bottom: 16px;
 }
 .cartbox .cartprods {
+  overflow-y: scroll;
+  height: 290px;
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.cartbox .cartprods::-webkit-scrollbar {
+  width: 0;
 }
 .cartbox .cartprods .cartprods-item {
   padding: 12px 16px;
@@ -24,6 +32,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  position: relative;
 }
 .cartbox .cartprods .cartprods-item .prod-img {
   border-radius: 6px;
@@ -60,7 +69,7 @@
           user-select: none;
   position: absolute;
   transform: translateX(50%);
-  left: 45%;
+  left: 25%;
 }
 .cartbox .cartprods .cartprods-item .pricing .price-one {
   font-weight: 700;
@@ -98,6 +107,8 @@
 }
 .cartbox .cartprods .cartprods-item .pricing .value-box .value-increm {
   background: #6C3EB8;
+  position: absolute;
+  left: 68px;
 }
 .cartbox .cartprods .cartprods-item .pricing .value-box .value-increm::after, .cartbox .cartprods .cartprods-item .pricing .value-box .value-increm::before {
   content: "";
@@ -129,8 +140,9 @@
   font-size: 14px;
   color: #576067;
 }
-.cartbox .cartprods .cartprods-item .closebtn {
+.cartbox .cartprods .cartprods-item .deletebtn {
   margin-left: 60px;
+  cursor: pointer;
 }
 .cartbox .completebox {
   margin-top: auto;

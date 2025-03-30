@@ -5,7 +5,7 @@ import styles from '../../css/Register.module.css'
 
 import closIcon from '../../images/icon/cross-icon.png'
 
-import { createUser } from '../../features/user/userSlice';
+import { createUser, refreshUser } from '../../features/user/userSlice';
 import useToggleForm from '../../utils/Hooks/UseToggleForm';
 
 const UserSignUpForm = ({ toggleCurrentFormType }) => {
@@ -43,9 +43,13 @@ const UserSignUpForm = ({ toggleCurrentFormType }) => {
 
     const isEmpty = Object.values(values).some(val => !val)
 
-    if (isEmpty) return;
+    const Token = localStorage.getItem('refresh_token');
 
-    dispatch(createUser(values));
+    if (isEmpty) {
+      if (Token) dispatch(refreshUser({ refreshToken: Token }))
+    }
+
+    dispatch(createUser(values))
 
     handleClick();
   }

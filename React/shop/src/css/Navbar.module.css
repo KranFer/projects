@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   width: 100%;
   padding: 20px 0;
@@ -17,10 +18,24 @@
 .navbar .header__profile:hover .profile-name {
   opacity: 0.8;
 }
-.navbar .header__profile img {
+.navbar .header__profile .profile-icon {
   width: 40px;
   height: 40px;
+  overflow: hidden;
+  position: relative;
   border-radius: 50%;
+}
+.navbar .header__profile .profile-icon img {
+  position: absolute;
+  width: 100%;
+  /*  Или height: 100%, чтобы картинка занимала всю высоту, если нужно */
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*  Важный параметр! */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .navbar .header__profile .profile-name {
   font-weight: 500;
@@ -38,9 +53,17 @@
   left: 17px;
   margin-right: 16px;
 }
+.navbar label.searchplace img.searchbar-close-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: 8px;
+}
 .navbar label.searchplace input.searchbar {
   height: 32px;
-  width: 300px;
+  width: 500px;
   background-color: #191919;
   border-radius: 6px;
   padding: 7px 10px 7px 35px;
@@ -52,6 +75,56 @@
   font-weight: 400;
   font-size: 9px;
   color: #B8B8B8;
+}
+.navbar label.searchplace input.borad {
+  border-radius: 6px 6px 0 0;
+}
+.navbar label.searchplace .searchbox {
+  background-color: #191919;
+  position: absolute;
+  z-index: 100;
+  padding: 8px;
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+}
+.navbar label.searchplace .searchbox .search__item {
+  display: flex;
+  margin-bottom: 12px;
+}
+.navbar label.searchplace .searchbox .search__item:hover {
+  background-color: #3a3a3a;
+}
+.navbar label.searchplace .searchbox .search__item .search__item-icon {
+  margin-right: 8px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+}
+.navbar label.searchplace .searchbox .search__item .search__item-icon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navbar label.searchplace .searchbox .search__item .search__item-desc {
+  padding: 6px 0px;
+}
+.navbar label.searchplace .searchbox .search__item .search__item-desc .search__item-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.navbar label.searchplace .searchbox .search__item .search__item-desc .search__item-cat {
+  font-weight: 500;
+  font-size: 14px;
+  color: #576067;
+}
+.navbar label.searchplace .searchbox .search__item:last-child {
+  margin-bottom: 0;
 }
 .navbar .btn_box {
   display: flex;
@@ -69,7 +142,8 @@
 .navbar .btn_box .btn_box-item:hover {
   opacity: 0.7;
 }
-.navbar .btn_box .btn_box-item .newInCart, .navbar .btn_box .btn_box-item .newInLiked {
+.navbar .btn_box .btn_box-item .newInCart,
+.navbar .btn_box .btn_box-item .newInLiked {
   display: flex;
   cursor: pointer;
   align-items: center;
