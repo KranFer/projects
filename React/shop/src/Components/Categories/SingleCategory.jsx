@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import styles from '../../css/Searchprod.module.css'
 import prod from '../../css/Tradings.module.css'
@@ -8,21 +9,32 @@ import { useGetProductsQuery } from '../../features/api/apiSlice';
 import Prods from '../Prods/Prods';
 
 const SingleCategory = () => {
+  const { id } = useParams();
+
   const [values, setValues] = useState({
     title: "",
     price: 0,
+    categoryId: id,
   })
+
 
   const DOTS = [1, 2, 3, 4]
   const [isActiveDot, setActiveDot] = useState(0);
+
+  useEffect(() => {
+    if (!id) return;
+
+    setValues({ ...values, categoryId: id });
+    setActiveDot(0)
+  }, [id]);
 
   const handleChange = ({ target: { value, name } }) => {
     setValues({ ...values, [name]: value })
     setActiveDot(0)
   }
 
-  const { data, isLoading } = useGetProductsQuery({ title: values.title });
-  const list = data?.filter(({ price }) => price >= values.price).filter((_, i) => i < 8*DOTS[isActiveDot] && i >= 8*(DOTS[isActiveDot]-1))
+  const { data, isLoading } = useGetProductsQuery({ ...values, price: 0 });
+  const list = data?.filter(({ price }) => price >= values.price).filter((_, i) => i < 8 * DOTS[isActiveDot] && i >= 8 * (DOTS[isActiveDot] - 1))
 
   return (
     <div className='container'>
